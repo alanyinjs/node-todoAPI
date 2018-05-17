@@ -1,5 +1,5 @@
-let express = require('express');
-let bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 
 let {mongoose} = require('./db/mongoose');
 let {Todo} = require('./models/todo');
@@ -26,3 +26,5 @@ let port = process.env.PORT||3000;
 app.listen(port, ()=>{
   console.log(`The server started on ${port}`);
 });
+
+module.exports = {app};
