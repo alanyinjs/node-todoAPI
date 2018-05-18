@@ -6,16 +6,17 @@
   "scripts": {
     "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",
-    "test-watch":"nodemon --exec 'npm test'"
+    "test-watch": "nodemon --exec 'npm test'"
   },
-  "engines":{
-    "node":"8.10.0"
+  "engines": {
+    "node": "8.10.0"
   },
   "author": "Alan Yin",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "lodash": "^4.17.10",
     "mongodb": "^3.1.0-beta4",
     "mongoose": "^5.1.1"
   },
